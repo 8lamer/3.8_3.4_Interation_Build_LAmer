@@ -42,7 +42,6 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
 
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
@@ -53,12 +52,14 @@
 		<!-- internal style sheet -->
 		<style>
 			h1 {
-				font-family: 'Alegreya';font-size: 40px;
+				font-family: 'Helvetica', 'Arial', sans-serif;
+				font-size: 2.5vw;
 				color: white;
 			}
 
 			h2 {
-				font-family: 'Alegreya';font-size: 30w;
+				font-family: 'Helvetica', 'Arial', sans-serif;
+				font-size: 1.6vw;
 				color: white;
 
 			}
