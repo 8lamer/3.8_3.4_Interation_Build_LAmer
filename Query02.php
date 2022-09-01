@@ -28,15 +28,17 @@
 
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>logo</b> </a>
 
+
 				<!-- Float links to the right. Hide them on small screens -->
-				<div class="w3-right w3-hide-small">	
-					<a href="indexV1.php" class="w3-bar-item w3-button">Home</a>
-					<a href="playlistV1.php" class="w3-bar-item w3-button">Playlist </a>	
-					<a href="contact.html" class="w3-bar-item w3-button" >Contact</a>
-					<a href="03_add_user(settings).php" class="w3-bar-item w3-button">Settings</a>	
+				<div class="w3-right w3-hide-small">
+					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
+					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
+					<a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
+					<a href="signout.php" class="w3-bar-item w3-button w3-xxlarge material-icons">logout</a>
 				</div>
 			</div>
 		</div>
+
 
 
 		<br>
@@ -45,86 +47,101 @@
 		<br>	
 
 		<!-- Container Queries -->
-		<div class="w3-content w3-container w3-padding-64 w3-center w3-white" id="about">
-			<a href="playlist_genre.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Genre A - Z" height="170" style="width:310px"> </a>
+		<div class="w3-content w3-container w3-padding-64 w3-center w3-yellow w3-image">
+			<a href="playlist_genre.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 			<a href="playlistV1.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
 			<a href="playlist_SongArtist.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 
 
 
-			<h3 class="w3-center">GENRE A - Z</h3>
+			<h3 class="w3-center w3-black">GENRE A - Z</h3>
 
 
-			<div class="w3-container w3-content w3-center w3-padding-14 w3-black" style="max-width:1200px">
-				<heading1>
-					<space></space>
-					<Song_ID1><h4>#</h4></Song_ID1>
-					<images1><h4>Image</h4></images1>
-					<Title1><h4>Title</h4></Title1>
-					<Artist1><h4>Artist</h4></Artist1>
-					<Album1><h4>Album</h4></Album1>
-					<Genre1><h4>Genre</h4></Genre1>
-					<Size1><h4>Size</h4></Size1>
-					<space></space>
-				</heading1>
+
+			<heading1>
+
+				<Song_ID1><h4>#</h4></Song_ID1>
+				<image1><h4></h4></image1>
+				<Title1><h4>Title</h4></Title1>
+				<Artist1><h4>Artist</h4></Artist1>
+				<Album1><h4>Album</h4></Album1>
+				<Genre1><h4>Genre</h4></Genre1>
+				<Size1><h4>Size</h4></Size1>
+				<Duration1><h4>Duration</h4></Duration1>
+
+			</heading1>
+
+
+
+
+
+			<div class="overflowTest w3-center" >
+
+				<content>
+					<?php
+					require "communityproject_mysqli.php";
+
+					//Creates a variable to store the sql query
+					$query = ("SELECT s.Song_ID, s.Images, s.Title, 
+									GROUP_CONCAT(DISTINCT ar.Artist SEPARATOR ', ') AS 'Artist',
+									GROUP_CONCAT(DISTINCT al.Album SEPARATOR ', ') AS 'Album',
+									GROUP_CONCAT(DISTINCT g.Genre SEPARATOR ', ') AS 'Genre',
+									s.Size, s.Seconds
+									FROM songdetails AS s 
+									INNER JOIN Album al ON s.Album_PK = al.Album_PK 
+									JOIN songtoartist j ON s.Song_ID = j.Song_ID 
+									JOIN Artist ar ON ar.Artist_PK = j.Artist_PK 
+									JOIN songtogenre as gs ON s.Song_ID = gs.Song_ID
+									JOIN Genre as g ON g.Genre_PK = gs.Genre_PK
+									GROUP BY s.Song_ID 
+									ORDER BY Genre ASC, Artist ASC");
+
+
+					//Runs and stores the query using the variable $con (see nav.php) and $query
+					$result = mysqli_query($conn,$query);
+					//runs in a 'while' loop
+					while($output=mysqli_fetch_array($result))
+					{
+					?>
+					<!--php is above. HTML is below. Used to output the query results -->
+
+
+					<heading2>
+						<space></space>
+
+						<Song_ID2><p class = 'white'><?php echo $output['Song_ID']; ?></p></Song_ID2>
+
+						<img src="images/<?php echo $output['Images']; ?>" style="width: 50px; height: 50px;">
+
+
+						<Title2><p class = 'white'><?php echo $output['Title']; ?></p></Title2>
+						<Artist2><p class = 'white'><?php echo $output['Artist']; ?></p></Artist2>
+						<Album2><p class = 'white'><?php echo $output['Album']; ?></p></Album2>
+						<Genre2><p class = 'white'><?php echo $output['Genre']; ?></p></Genre2>
+						<Size2><p class = 'white'><?php echo $output['Size']; ?></p></Size2>
+						<Duration2><p class = 'white'><?php echo $output['Seconds']; ?></p></Duration2>
+						<space></space>
+
+					</heading2>
+					<?php
+						//Closes the output while loop
+					}
+					?>
+
+
+					</content>
+
+
 			</div>
-
-			<br>
-			<br>
-
-			<!--  <img width="400" height="200" src="<?php include ('/images.php');?>" /> -->
-
-
-			<content>
-				<?php
-				require "communityproject_mysqli.php";
-
-				//Creates a variable to store the sql query
-				$query = ("SELECT s.Song_ID, s.Images, s.Title, ar.Artist, al.Album, g.Genre, s.Size
-					FROM songdetails AS s 
-					INNER JOIN Album al ON s.Album_PK = al.Album_PK 
-					JOIN songtoartist j ON s.Song_ID = j.Song_ID 
-					JOIN Artist ar ON ar.Artist_PK = j.Artist_PK 
-					JOIN songtogenre as gs ON s.Song_ID = gs.Song_ID
-					JOIN Genre as g ON g.Genre_PK = gs.Genre_PK
-					ORDER BY g.Genre ASC");
-
-
-				//Runs and stores the query using the variable $con (see nav.php) and $query
-				$result = mysqli_query($conn,$query);
-				//runs in a 'while' loop
-				while($output=mysqli_fetch_array($result))
-				{
-				?>
-				<!--php is above. HTML is below. Used to output the query results -->
-
-
-				<heading2>
-					<space></space>
-
-					<Song_ID2><p class = 'white'><?php echo $output['Song_ID']; ?></p></Song_ID2>
-					<Images2><p class = 'white'><?php echo $output['Images']; ?></p></Images2>
-					<Title2><p class = 'white'><?php echo $output['Title']; ?></p></Title2>
-					<Artist2><p class = 'white'><?php echo $output['Artist']; ?></p></Artist2>
-					<Album2><p class = 'white'><?php echo $output['Album']; ?></p></Album2>
-					<Genre2><p class = 'white'><?php echo $output['Genre']; ?></p></Genre2>
-					<Size2><p class = 'white'><?php echo $output['Size']; ?></p></Size2>
-					<space></space>
-
-				</heading2>
-				<?php
-					//Closes the output while loop
-				}
-				?>
-
-
-			</content>
 		</div>
-
-
-		<!-- Footer -->
-		<footer class="w3-center w3-black w3-padding-64">
+		
+		
+				<!-- Footer -->
+		<footer class="w3-center w3-black w3-padding-16">
 			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
+			<br>
+			<br>
+			<a href="#top" class="w3-button w3-light-grey">To the top </a>
 		</footer>
 
 
