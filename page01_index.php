@@ -23,7 +23,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 		
 
-		<meta name = "Keywords" content = "Graeme, usic Database, Soundwave, Music, Tunes"/>
+		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
 		<meta name = "Description" content = "Graeme's Music Database"/>
 		<meta name = "viewport" content = "width=device-width,initial-scale=1"/>
