@@ -21,7 +21,7 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link href='https://fonts.googleapis.com/css?family=Alegreya' rel='stylesheet'>
+		
 
 		<meta name = "Keywords" content = "Graeme, usic Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
@@ -30,12 +30,24 @@
 
 		<!-- internal style sheet -->
 		<style>
+			
+			/* main heading + second heading */
 			h1,h2 {
-				font-family: 'Alegreya';
-				font-size: 35w;
+				font-family: 'Helvetica', 'Arial', sans-serif;
+				font-size: 29px;
 				color: white;
 
 			}
+			
+			
+			/* text for genres */
+			h5 {
+				font-family: 'Helvetica', 'Arial', sans-serif;
+				font-size: 20px;
+				color: white;
+
+			}
+			
 			
 			body, html {
 				height: 100%;
@@ -87,7 +99,8 @@
 		</div>
 
 
-
+	
+		<!-- image background -->
 		<div class="w3-orange container w3-image">
 			<div class="bg">
 
@@ -119,7 +132,6 @@
 										<h4>Album name</h4>
 									</div>
 
-
 									<div class="w3-third">
 										<img class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
@@ -144,6 +156,7 @@
 							</div>
 
 
+							<!-- script for slideshow -->
 							<script>
 								var slideIndex = 0;
 								carousel();
@@ -162,12 +175,20 @@
 							</script>
 
 							<br>
-							<br>
+							
 
+							<!-- Title for Genres -->
+							<div class="w3-container w3-large">
+								<div class="w3-left-align">
+									<h5>Popular Genres</h5>
+								</div>
+							</div>
+							
+							
 							<!-- Playlist photos / Queries -->
 							<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
-
 							<div class="container w3-row-padding w3-center">
+								
 								<div class="w3-col m3">
 									<a href="Playlist_Genre.rock .php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
 								</div>
