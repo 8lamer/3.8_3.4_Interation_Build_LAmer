@@ -3,15 +3,14 @@
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
+		
+		<!-- styles -->
 		<link rel = "stylesheet" type = "text/css" href = "css/fonts.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/grids.css">
-		<link rel = "stylesheet" href = "css/style.css"/>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
@@ -24,9 +23,9 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<img src="images/placeholder.jpg" width="40" height="40">
-				<a href="index.html" class="w3-bar-item w3-button"><b>logo</b> </a>
+				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
 				<!-- Float links to the right -->
 				<div class="w3-right" >
@@ -94,11 +93,11 @@
 		</div>
 
 
-
 		<!-- Footer -->
 		<footer class="w3-bottom w3-center w3-black w3-padding-64">
 			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
 		</footer>
+
 
 	</body>
 </html>
