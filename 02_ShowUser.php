@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-		<meta name = "Keywords" content = "Graeme, usic Database, Soundwave, Music, Tunes"/>
+		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
 		<meta name = "Description" content = "Graeme's Music Database"/>
 		<meta name = "viewport" content = "width=device-width,initial-scale=1"/>
