@@ -36,18 +36,43 @@
 				color: white;
 
 			}
+			
+			body, html {
+				height: 100%;
+				margin: 0;
+
+			}
+
+			.bg {
+				/* The image used */
+				background-image: url("images/orangebg.jpg");
+
+				/* Full height */
+				height: 100%;
+				width: 100%;
+
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+			}
 		</style>
 
 	</head>
 	<body>
 
+
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
-				<img src="images/placeholder.jpg" width="40" height="40">
+				<div class="w3-left">
+				<img src="images/placeholder.jpg" width="45" height="40">
+				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
+				
 
-				<!-- Float links to the right -->
+				<!-- Float links to the right-->
 				<div class="w3-right">
 					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
 					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
@@ -63,116 +88,122 @@
 
 
 
-		<!-- background container; colour orange -->
-		<div class="container2" style="max-width:100%">
+		<div class="w3-orange container w3-image">
+			<div class="bg">
 
 
-			<div class="w3-panel w3-padding-large w3-margin-left w3-margin-right">
+				<br>
+				<br>
+				<br>
+				<br>
 
 
-				<!-- slideshow for album covers  -->
-				<div class="w3-panel w3-padding-large" style="width:100%">
-					<div class="w3-container w3-large">
-						<div class="w3-left-align"><h2>Welcome To SoundWave <?php echo $User;?>!<br/></h2></div>
+				<center>
+					<div class= "container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
 
-						<div class="w3-row-padding w3-padding-16 w3-center">
 
-							<div class="mySlides w3-third">
-								<img class="w3-round-large" src="images/placeholder.jpg" alt="placeholder"   width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
+						<!-- slideshow for album covers  -->
+						<div class="w3-panel w3-padding-large" style="width:100%">
+							<div class="w3-container w3-large">
+								<div class="w3-left-align w3-animate-opacity"><h2>Welcome To SoundWave <?php echo $User;?>!<br/></h2></div>
+
+								<div class="w3-row-padding w3-padding-16 w3-center">
+
+									<div class="mySlides w3-third">
+										<img class="w3-round-large" src="images/placeholder.jpg" alt="Sandwich"   width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>
+
+									<div class="w3-third">
+										<img class="w3-round-large"src="images/placeholder.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>
+
+
+									<div class="w3-third">
+										<img class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>	
+
+									<div class="mySlides w3-third">
+										<img class="w3-round-large" src="images/placeholder.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>
+
+									<div class="mySlides w3-third">
+										<img  class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>
+
+									<div class="mySlides w3-third">
+										<img class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Album name</h4>
+									</div>
+
+								</div>			
 							</div>
 
-							<div class="w3-third">
-								<img class="w3-round-large"src="images/placeholder.jpg" alt="placeholder" width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
+
+							<script>
+								var slideIndex = 0;
+								carousel();
+
+								function carousel() {
+									var i;
+									var x = document.getElementsByClassName("mySlides");
+									for (i = 0; i < x.length; i++) {
+										x[i].style.display = "none";
+									}
+									slideIndex++;
+									if (slideIndex > x.length) {slideIndex = 1}
+									x[slideIndex-1].style.display = "block";
+									setTimeout(carousel, 2000); // Change image every 2 seconds
+								}
+							</script>
+
+							<br>
+							<br>
+
+							<!-- Playlist photos / Queries -->
+							<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+
+							<div class="container w3-row-padding w3-center">
+								<div class="w3-col m3">
+									<a href="Playlist_Genre.rock .php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
+								</div>
+
+
+								<div class="w3-col m3">
+									<a href="Playlist_Genre.pop.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="POP"> </a>
+								</div>
+
+
+
+								<div class="w3-col m3">
+									<a href="Playlist_Genre.country.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+								</div>
+
+								<div class="w3-col m3">
+									<a href="Playlist_Genre.jazz.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+								</div>
+
+
 							</div>
-
-
-							<div class="w3-third">
-								<img class="w3-round-large" src="images/placeholder.jpg" alt="placeholder" width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
-							</div>	
-
-							<div class="mySlides w3-third">
-								<img class="w3-round-large" src="images/placeholder.jpg" alt="placeholder" width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
-							</div>
-
-							<div class="mySlides w3-third">
-								<img  class="w3-round-large" src="images/placeholder.jpg" alt="placeholder" width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
-							</div>
-
-							<div class="mySlides w3-third">
-								<img class="w3-round-large" src="images/placeholder.jpg" alt="placeholder" width="210" height="110" style="width:100%;max-width:230px">
-								<h4>Album name</h4>
-							</div>
-
-						</div>			
+						</div>
 					</div>
 
-					<!-- effect for slideshow; script -->
-					<script>
-						var slideIndex = 0;
-						carousel();
-
-						function carousel() {
-							var i;
-							var x = document.getElementsByClassName("mySlides");
-							for (i = 0; i < x.length; i++) {
-								x[i].style.display = "none";
-							}
-							slideIndex++;
-							if (slideIndex > x.length) {slideIndex = 1}
-							x[slideIndex-1].style.display = "block";
-							setTimeout(carousel, 2000); // Change image every 2 seconds
-						}
-					</script>
-
-					<br>
 					<br>
 
-					<!-- Playlist photos / Queries -->
-					<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
 
-					<div class="w3-row-padding w3-center">
-						<div class="w3-col m3">
-							<a href="Playlist_Genre.rock .php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
-						</div>
+				</center>
+				<!-- Footer -->
+				<footer class="w3-container w3-padding-16 w3-center w3-white">
+					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+					<a href="#top" class="w3-button w3-grey">To the top </a>
+				</footer>
 
-
-						<div class="w3-col m3">
-							<a href="Playlist_Genre.pop.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="POP"> </a>
-						</div>
-
-
-
-						<div class="w3-col m3">
-							<a href="Playlist_Genre.country.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
-						</div>
-
-						<div class="w3-col m3">
-							<a href="Playlist_Genre.jazz.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
-						</div>
-					</div>
-
-
-
-				</div>	
 			</div>
-		</div>
-
-		<br>
-		<br>
-		<br>
-		<br>
-
-		<!-- Footer -->
-		<footer class="w3-bottom w3-center w3-white w3-padding-16">
-			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
-			<a href="#top" class="w3-button w3-black">To the top </a>
-		</footer>
-
+		</div>	
 
 	</body>
 </html>
