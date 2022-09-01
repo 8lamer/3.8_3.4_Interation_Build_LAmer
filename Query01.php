@@ -3,15 +3,15 @@
 	<head>
 		<title>Sound Wave</title>
         	<meta charset = "utf-8">
+		
+		<!-- styles -->
 		<link rel = "stylesheet" type = "text/css" href = "css/fonts.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/grids.css">
-		<link rel = "stylesheet" href = "css/style.css"/>
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-		
         <meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
         <meta name = "Author" content = "Liv Amer"/>
         <meta name = "Description" content = "Graeme's Music Database"/>
@@ -21,16 +21,16 @@
 	</head>
 	<body>
 		
-			<!-- Navbar (sit on top) -->
+		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<img src="images/placeholder.jpg" width="40" height="40">
 
-				<a href="indexV1.php" class="w3-bar-item w3-button"><b>logo</b> </a>
+				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
 
-				<!-- Float links to the right. Hide them on small screens -->
-				<div class="w3-right w3-hide-small">
+				<!-- Float links to the right -->
+				<div class="w3-right">
 					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
 					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
 					<a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
@@ -40,14 +40,11 @@
 		</div>
 
 
-		
-		<br>
-		<br>
-		<br>
-		<br>	
+	<div class="w3-black">
+			<div class="w3-container w3-content w3-padding-32" style="max-width:100%">
 		
 		<!-- Container Queries -->
-		<div class="w3-content w3-container w3-padding-64 w3-center w3-yellow w3-image">
+		<div class="w3-content w3-container w3-padding-64 w3-center w3-black w3-image">
 			<a href="playlist_genre.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 			<a href="playlistV1.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
 			<a href="playlist_SongArtist.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
@@ -69,8 +66,6 @@
 		</heading1>
 	
 	
-		  
-		  
 	
 		<div class="overflowTest w3-center" >
 			<content>
@@ -105,17 +100,14 @@
 				<heading2>
 					<space></space>
 					
-					<Song_ID2><p class = 'white'><?php echo $output['Song_ID']; ?></p></Song_ID2>
-					
+					<Song_ID2><p2 class = 'white'><?php echo $output['Song_ID']; ?></p2></Song_ID2>
 					<img src="images/<?php echo $output['Images']; ?>" style="width: 50px; height: 50px;">
-					
-					
-					<Title2><p class = 'white'><?php echo $output['Title']; ?></p></Title2>
-					<Artist2><p class = 'white'><?php echo $output['Artist']; ?></p></Artist2>
-					<Album2><p class = 'white'><?php echo $output['Album']; ?></p></Album2>
-					<Genre2><p class = 'white'><?php echo $output['Genre']; ?></p></Genre2>
-					<Size2><p class = 'white'><?php echo $output['Size']; ?></p></Size2>
-					<Duration2><p class = 'white'><?php echo $output['Seconds']; ?></p></Duration2>
+					<Title2><p2 class = 'white'><?php echo $output['Title']; ?></p2></Title2>
+					<Artist2><p2 class = 'white'><?php echo $output['Artist']; ?></p2></Artist2>
+					<Album2><p2 class = 'white'><?php echo $output['Album']; ?></p2></Album2>
+					<Genre2><p2 class = 'white'><?php echo $output['Genre']; ?></p2></Genre2>
+					<Size2><p2 class = 'white'><?php echo $output['Size']; ?></p2></Size2>
+					<Duration2><p2 class = 'white'><?php echo $output['Seconds']; ?></p2></Duration2>
 					<space></space>
 					
 				</heading2>
@@ -131,18 +123,16 @@
 			</div>
 		</div>
 
+		</div>
+		</div>
 
-	
-
+		<br>
+		<br>
 		<!-- Footer -->
-		<footer class="w3-center w3-black w3-padding-16">
-			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
-			<br>
-			<br>
-			<a href="#top" class="w3-button w3-light-grey">To the top </a>
+		<footer class="w3-bottom w3-center w3-grey w3-padding-16">
+			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+			<a href="#top" class="w3-button w3-black">To the top </a>
 		</footer>
-
-
 
 	</body>
 </html>
