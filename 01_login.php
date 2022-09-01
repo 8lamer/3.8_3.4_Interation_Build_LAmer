@@ -53,13 +53,13 @@
 		<style>
 			h1 {
 				font-family: 'Helvetica', 'Arial', sans-serif;
-				font-size: 2.5vw;
+				font-size: 40px;
 				color: white;
 			}
 
 			h2 {
 				font-family: 'Helvetica', 'Arial', sans-serif;
-				font-size: 1.6vw;
+				font-size: 25px;
 				color: white;
 
 			}
