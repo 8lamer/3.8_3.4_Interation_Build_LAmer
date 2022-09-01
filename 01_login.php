@@ -53,7 +53,7 @@
 		<!-- internal style sheet -->
 		<style>
 			h1 {
-				font-family: 'Alegreya';font-size: 35px;
+				font-family: 'Alegreya';font-size: 40px;
 				color: white;
 			}
 
@@ -62,8 +62,29 @@
 				color: white;
 
 			}
-		</style>
 
+			
+			body, html {
+				height: 100%;
+				margin: 0;
+
+			}
+
+			.bg {
+				/* The image used */
+				background-image: url("images/orangebg.jpg");
+
+				/* Full height */
+				height: 100%;
+				width: 100%;
+
+				/* Center and scale the image nicely */
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+			}
+		</style>
 
 
 	</head>
@@ -73,29 +94,46 @@
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
+				<div class="w3-left">
 				<img src="images/placeholder.jpg" width="40" height="40">
+				</div>
 				<a class="w3-bar-item"><b>Soundwave</b> </a>
 			</div>
 		</div>
+		
 
 
 		
 		<!-- background container; colour orange -->
-		<div class="container2" style="max-width:100%">
-		
+		<div class="w3-orange container w3-image">
+			<div class="bg">
+
+
+				<br>
+				<br>
+				<br>
+				<br>
+
+
+				<center>
+					<div class= "container w3-panel w3-padding-large-16" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
+
+					
 
 			<!-- Container (placeholder) -->
 			<div class="w3-content w3-container w3-padding-64">
 
 				<div class="w3-row">
 					<div class="w3-col m6 w3-center w3-padding-large">
-						<img src="images/placeholder.jpg" class="w3-round w3-image w3-opacity" alt="Photo of Me" width="500" height="333">
+						<img src="images/placeholder.jpg" class="w3-round w3-image" alt="logo brand" width="350" height="233">
 					</div>
 
 
 					<!-- Brand title + second title -->
 					<div class="w3-col m6 w3-padding-large">
+						<div class="content"style="margin-top: -25px;margin-right: 120px;">
 						<h1>SOUNDWAVE</h1>
+						</div>
 						<div class="content"style="margin-top: -25px;margin-left: 140px;">
 							<h2>FEEL THE MUSIC</h2>
 						</div>
@@ -185,18 +223,24 @@
 
 					</form>
 				</div>
+						</div>
+					</div>
+
+				</center>
+				<br>
+				<br>
 			</div>
-
-			<br>
-			<br>
-
-
 		</div>
+
+
 
 		<!-- footer -->
 		<footer class="w3-center w3-white w3-padding-64">
 			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 		</footer>
+
+			
+		
 
 	</body>
 </html>
