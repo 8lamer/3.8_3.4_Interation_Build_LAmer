@@ -39,7 +39,7 @@ else{
 
 			.bg {
 				/* The image used */
-				background-image: url("images/orangebg.jpg");
+				background-image: url("images/blackbg.jpg");
 
 				/* Full height */
 				height: 100%;
@@ -56,9 +56,6 @@ else{
 				font-family: 'Helvetica', 'Arial', sans-serif;
 				font-size: 18px;
 				color: white;
-				text-decoration: underline;
-				text-decoration-color: white;
-				text-decoration-style: double;
 
 			}
 			
@@ -80,7 +77,7 @@ else{
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<div class="w3-left">
 					<img src="images/placeholder.jpg" width="40" height="40">
 				</div>
@@ -114,7 +111,7 @@ else{
 
 
 				<center>
-					<div class= "w3-container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
+					<div class= "w3-container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(0,0,0,0.3);">
 
 						<!-- Container Queries -->
 
@@ -129,8 +126,9 @@ else{
 						</div>
 
 						<div class="w3-third">
-		<a href="playlist_SongArtist.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
+		<a href="playlist_SongArtist.php"> <img src="images/placeholder.jpg" class=" w3-border w3-border-orange  w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 							<h3>SONG / ARTIST Z - A</h3>
+							<br>
 						</div>
 						
 
@@ -232,16 +230,19 @@ else{
 						
 						<div class="w3-left">
 							<p2>Songs sorted by Song and Artist</p2>
-						</div>	
+						</div>
+					
+
+						
 					</div>
 
 
 
 				</center>
 				<!-- Footer -->
-				<footer class="w3-container w3-padding-16 w3-center w3-white">
+				<footer class="w3-container w3-padding-16 w3-center w3-grey">
 					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
-					<a href="#top" class="w3-button w3-grey">To the top </a>
+					<a href="#top" class="w3-button w3-black">To the top </a>
 					
 				</footer>
 
