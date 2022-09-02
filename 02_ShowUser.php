@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
-		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
+		<meta name = "Keywords" content = "Graeme, usic Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
 		<meta name = "Description" content = "Graeme's Music Database"/>
 		<meta name = "viewport" content = "width=device-width,initial-scale=1"/>
@@ -32,7 +32,7 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<div class="w3-left">
 				<img src="images/placeholder.jpg" width="45" height="40">
 				</div>
@@ -66,14 +66,15 @@
 
 		<!-- Title for query: show users -->
 		<div style="margin-left:8%">
-			<div class="container5">
+			<div class="w3-container w3-dark-grey">
 				<h2>Show User</h2>
 			</div>
 
 
-			<div class="container4 w3-display-middle">
 
-				<div class="scroller w3-center w3-row">
+			<div class="w3-container w3-dark-grey w3-display-middle">
+
+				<div class="scroller w3-center w3-row w3-border w3-black">
 					<div class="w3-cell-row" style="width:100%">
 
 						<!-- Users php -->
