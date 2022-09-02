@@ -31,7 +31,7 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<div class="w3-left">
 				<img src="images/placeholder.jpg" width="45" height="40">
 				</div>
@@ -67,9 +67,9 @@
 
 		<!-- Title for query: Delete Users -->
 		<div style="margin-left:8%">
-			<div class="container5">
-				<h2>Delete User</h2>
-			</div>
+				<div class="w3-container w3-dark-grey">
+			 	 <h2>Delete User</h2>
+				</div>
 
 			<div class="w3-container">
 				<div class="content"><!-- Holds the delete users content -->
