@@ -29,11 +29,11 @@ heading2{
 /* colour rows for queries (each song)*/
 
 heading2:nth-child(even) {
-	background: ;
+	background:;
 
 }
 heading2:nth-child(odd) {
-	background:rgba(0,0,0,0.2) ;
+	background:rgba(255, 255, 255, .4);
 }
 
 heading2:hover { /* add an effect over each song: hovering */
@@ -91,17 +91,6 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
 }
 
 
-/* colour rows for queries (each song)*/
-
-.scroller:nth-child(even) {
-	background: #dd9a4f;
-
-}
-.scroller:nth-child(odd) {
-	background: #ffc266;
-}
-
-
 	
 .back-to-top-link {
   display: inline-block;
@@ -148,4 +137,7 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
 	padding: 10px;
 	
 }
+
+
+
 
