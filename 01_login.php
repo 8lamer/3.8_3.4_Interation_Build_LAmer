@@ -54,7 +54,7 @@
 			h1 {
 				font-family: 'Helvetica', 'Arial', sans-serif;
 				font-size: 40px;
-				color: white;
+				color: orange;
 			}
 
 			h2 {
@@ -73,7 +73,7 @@
 
 			.bg {
 				/* The image used */
-				background-image: url("images/orangebg.jpg");
+				background-image: url("images/blackbg.jpg");
 
 				/* Full height */
 				height: 100%;
@@ -94,7 +94,7 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-white w3-padding w3-card">
+			<div class="w3-bar w3-grey w3-padding w3-card">
 				<div class="w3-left">
 				<img src="images/placeholder.jpg" width="40" height="40">
 				</div>
@@ -117,7 +117,7 @@
 
 
 				<center>
-					<div class= "container w3-panel w3-padding-large-16" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
+					<div class= "container w3-panel w3-padding-large-16" style="height:80%;width:80%; background-color:rgba(0,0,0,0.3);">
 
 					
 
@@ -157,7 +157,7 @@
 								</div>
 							</div>
 							<div class="w3-center">
-								<button class="w3-button w3-section w3-green w3-ripple w3-hover-grey"> Log in </button>
+								<button class="w3-button w3-section w3-white w3-ripple w3-hover-grey"> Log in </button>
 							</div>
 
 							<!-- creates a line to seperate both login form / register -->
@@ -168,7 +168,7 @@
 
 							<br>
 							<div class="w3-center">
-								<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white w3-ripple w3-hover-grey">SIGN UP FOR SOUNDWAVE</button> 
+								<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-orange w3-ripple w3-hover-grey">SIGN UP FOR SOUNDWAVE</button> 
 							</div>
 
 							<h3 class = "white"><?php echo $error; ?></h3>
@@ -180,13 +180,13 @@
 			
 			<!-- register form - modal pop up -->
 			<div id="id01" class="w3-modal">
-				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-white" style="max-width:600px">
+				<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-black" style="max-width:600px">
 
 					<div class="w3-center"><br>
 						<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
 					</div>
 
-					<form class="w3-container w3-white" action="/action_page.php">
+					<form class="w3-container w3-black" action="/action_page.php">
 						<div class="w3-section">
 							<label for = 'login'>Username:</label>
 							<input type = "text" name = "username" placeholder="Enter user name" style="width:100%" required/><br />
@@ -196,10 +196,12 @@
 						</div>
 
 
+						<div class="w3-left">
+							<br>
 						<?php
 						//connect.php (tells where to connect servername, username, password, dbaseName)
 						require "communityproject_mysqli.php";
-						print "<p>Connected to server   <br>  </p>";
+						print "<p1>Connected to server   <br>  </p1>";
 
 
 						$UserID = isset($_POST['username']) ?$_POST['username']: '';
@@ -210,15 +212,17 @@
 
 						if (mysqli_query($conn, $insertquery))
 						{
-							echo "<p class = white > Record inserted:</p>";
+							echo "<p1 class = 'w3-left' > Record inserted:</p1>";
 						}
 						else
 						{
-							echo "<p class = 'white'>Error inserting record:</p>";
+							echo "<p1 class = 'white'>Error inserting record:</p1>";
 						}
 						?>
 
-						<div class="w3-container w3-border-top w3-padding-16 w3-white">
+						</div>
+						
+						<div class="w3-container w3-border-top w3-padding-16 w3-black">
 							<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-right w3-button w3-red">Cancel</button>
 						</div>
 
@@ -236,12 +240,10 @@
 
 
 		<!-- footer -->
-		<footer class="w3-center w3-white w3-padding-64">
+		<footer class="w3-center w3-grey w3-padding-64">
 			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 		</footer>
-
-			
-		
+	
 
 	</body>
 </html>
