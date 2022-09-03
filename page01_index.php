@@ -21,7 +21,8 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="images/favicon1.ico">
 
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
@@ -35,7 +36,7 @@
 			h1,h2 {
 				font-family: 'Helvetica', 'Arial', sans-serif;
 				font-size: 29px;
-				color: orange;
+				color: white;
 
 			}
 			
@@ -57,7 +58,7 @@
 
 			.bg {
 				/* The image used */
-				background-image: url("images/blackbg.jpg");
+				background-image: url("images/orangebg.jpg");
 
 				/* Full height */
 				height: 100%;
@@ -77,9 +78,9 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-grey w3-padding w3-card">
+			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-				<img src="images/placeholder.jpg" width="45" height="40">
+					<img src="images/logo.jpg" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 				
@@ -112,7 +113,8 @@
 
 
 				<center>
-					<div class= "container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(0,0,0,0.3);">
+					<!-- clear container  -->
+					<div class= "container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
 
 
 						<!-- slideshow for album covers  -->
@@ -218,9 +220,17 @@
 
 				</center>
 				<!-- Footer -->
-				<footer class="w3-container w3-padding-16 w3-center w3-grey">
+				<footer class="w3-container w3-padding-16 w3-center w3-white">
 					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
-					<a href="#top" class="w3-button w3-black">To the top </a>
+					<a href="#top" class="w3-button w3-grey">To the top </a>
+					<div class="w3-xlarge w3-section">
+						<i class="fa fa-facebook-official w3-hover-opacity"></i>
+						<i class="fa fa-instagram w3-hover-opacity"></i>
+						<i class="fa fa-snapchat w3-hover-opacity"></i>
+						<i class="fa fa-pinterest-p w3-hover-opacity"></i>
+						<i class="fa fa-twitter w3-hover-opacity"></i>
+						<i class="fa fa-linkedin w3-hover-opacity"></i>
+					</div>
 				</footer>
 
 			</div>
