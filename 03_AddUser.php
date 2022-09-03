@@ -9,7 +9,9 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
+		<!-- favicon -->
+		<link rel="icon" type="image/x-icon" href="images/favicon1.ico">
+		
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
 		<meta name = "Description" content = "Graeme's Music Database"/>
@@ -30,9 +32,9 @@
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-grey w3-padding w3-card">
+			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-				<img src="images/placeholder.jpg" width="45" height="40">
+				<img src="images/logo.jpg" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 				
@@ -65,7 +67,7 @@
 
 		<!-- Title for query: Add Users -->
 		<div style="margin-left:8%">
-			<div class="w3-container w3-dark-grey">
+			<div class="container5">
 				<h2>Add User</h2>
 			</div>
 
