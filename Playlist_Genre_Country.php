@@ -108,24 +108,21 @@ else{
 				<br>
 
 				<center>
+					<!-- clear container for aesthetic -->
 					<div class= "w3-container w3-panel w3-padding-large" style="height:80%;width:80%; background-color:rgba(255, 255, 255, .2);">
 
+						<!-- picture for album -->
 						<div class="w3-container" style="height:100%;width:100%;">	
 							<img class="w3-round w3-left" src="images/placeholder.jpg" width="200" height="180">
 
 							<div class="w3-container w3-left">
-
-								<!-- title for genre -->
+								<!-- title for genre + description -->
 								<h2 class="w3-left-align">COUNTRY</h2>
 								<p3 class="w3-left-align">enjoy the best country of all time </p3>
 
 
 							</div>
 						</div>
-
-
-
-
 
 
 						<heading1>
@@ -202,8 +199,8 @@ else{
 								?>
 
 							</content>
-							
-					
+
+
 						</div>
 					</div>
 
