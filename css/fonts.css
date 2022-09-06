@@ -2,25 +2,36 @@ h1, h2, h3, h4, h5, p{
 	font-family: arial;
 }
 
+
+
 h1, h2, h3{
 	font-weight: 900;
 	margin: -5px 0px 0px 5px;
 }
+
+
 
 h1{
 	font-size: 1.25em;
 	color: black;
 }
 
+
+
 h2{
 	font-size: 2.0em;
 	color: #fff;
 }
 
+
+
+
 h3, h5 {
 	font-size: 1.1em;
 	color: #888;
 }
+
+
 
 h6{
 	font-size: 22px;
@@ -28,9 +39,13 @@ h6{
 	margin: 0px
 }
 
+
+
 h5{
 	margin: 0px
 }
+
+
 
 
 p{
@@ -40,15 +55,18 @@ p{
 }
 
 
+
 p1{
 	color: white;
 }
+
+
 
 .grey{
 	color: black;
 }
 
+
 label {
 	margin: left;
 }
-

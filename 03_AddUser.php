@@ -26,15 +26,14 @@
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-wide w3-padding w3-card">
 				<img src="images/placeholder.jpg" width="40" height="40">
-
 				<a href="index.html" class="w3-bar-item w3-button"><b>logo</b> </a>
 
-				<!-- Float links to the right. Hide them on small screens -->
-				<div class="w3-right w3-hide-small">	
-					<a href="indexV1.php" class="w3-bar-item w3-button">Home</a>
-					<a href="playlistV1.php" class="w3-bar-item w3-button">Playlist </a>	
-					<a href="contact.html" class="w3-bar-item w3-button" >Contact</a>
-					<a href="03_add_user(settings).php" class="w3-bar-item w3-button">Settings</a>	
+				<!-- Float links to the right -->
+				<div class="w3-right" >
+					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
+					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
+					<a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
+					<a href="settings.php" class="w3-bar-item w3-button w3-xxlarge material-icons">settings</a>	
 				</div>
 			</div>
 		</div>
@@ -45,29 +44,23 @@
 		<br>
 
 
-
+		<!-- side navbar for admin + php codes -->
 		<div class="w3-sidebar w3-bar-block w3-border-right" style="width:8%">
 			<a href="03_add_user(settings).php" class="w3-bar-item w3-button w3-xxlarge material-icons">person_add</a> 
 			<a href="02_show_user.php" class="w3-bar-item w3-button w3-xxlarge material-icons">visibility</a> 
 			<a href="04_update_user.php" class="w3-bar-item w3-button w3-xxlarge material-icons">manage_accounts</a>
 			<a href="05_delete_user.php" class="w3-bar-item w3-button w3-xxlarge material-icons">person_remove</a>
 
-
 		</div>
 
 
-
 		<div style="margin-left:8%">
-
 			<div class="w3-container w3-dark-grey">
 				<h2>Add User</h2>
 			</div>
 
 			<div class="w3-container">
-
-
-				<div class="content"><!-- Holds the main page content -->
-
+				<div class="content"><!-- Holds the add users content -->
 					<form method = "post" id= "04_add_user.php">
 						<h6><label for = 'login'>Username:</label>
 							<input type = "text" name = "username" placeholder="Enter user name"/></h6>
@@ -98,25 +91,14 @@
 					?>
 				</div>
 			</div>
-
 		</div>
 
 
 
-		<br>				
-		<br>
-		<br>				
-		<br>
-		<br>					
-		<br>
-		<br>
-		<br>
-
 		<!-- Footer -->
-		<footer class="w3-center w3-black w3-padding-64">
+		<footer class="w3-bottom w3-center w3-black w3-padding-64">
 			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
 		</footer>
-
 
 	</body>
 </html>
