@@ -2,16 +2,15 @@
 <html lang = "eng">
 	<head>
 		<title>Sound Wave</title>
-        <meta charset = "utf-8">
+        	<meta charset = "utf-8">
+		
+		<!-- styles -->
 		<link rel = "stylesheet" type = "text/css" href = "css/fonts.css">
 		<link rel = "stylesheet" type = "text/css" href = "css/grids.css">
-		<link rel = "stylesheet" href = "css/style.css"/>
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-
 		
         <meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
         <meta name = "Author" content = "Liv Amer"/>
@@ -24,17 +23,17 @@
 		
 			<!-- Navbar (sit on top) -->
 			<div class="w3-top">
-			 	<div class="w3-bar w3-white w3-wide w3-padding w3-card">
+			 	<div class="w3-bar w3-grey w3-padding w3-card">
 					<img src="images/placeholder.jpg" width="40" height="40">
-					<a href="index.html" class="w3-bar-item w3-button"><b>logo</b> </a>
+					<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 	  
-		 <!-- Float links to the right -->
+	 				<!-- Float links to the right -->
 					<div class="w3-right" >
 					  <a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
 					  <a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
 					  <a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
 					  <a href="settings.php" class="w3-bar-item w3-button w3-xxlarge material-icons">settings</a>	
-    				</div>
+    					</div>
 				</div>
 			</div>
 		
@@ -55,19 +54,18 @@
 		
 
 
-
 			<div style="margin-left:8%">
 				<div class="w3-container w3-dark-grey">
-			 	 <h1>Delete User</h1>
+			 	 <h2>Delete User</h2>
 				</div>
 
 			<div class="w3-container">
 				<div class="content"><!-- Holds the delete users content -->
 					
 						<form method = "post" id= "06_delete_user.php">
-							<h4><label for = 'login'>User Name:</label>
-							<input type = "text" name = "UserName" placeholder="Enter user name"/></h4>
-							<h4><input type = "submit" value = "Delete" /></h4><br>
+							<h6><label for = 'login'>User Name:</label>
+							<input type = "text" name = "UserName" placeholder="Enter user name"/></h6>
+							<h6><input type = "submit" value = "Delete" /></h6><br>
 						</form>
 							<?php
 								require "communityproject_mysqli.php";
@@ -80,11 +78,11 @@
 							
 								if (mysqli_query($conn, $deletequery))
 								{
-								echo "<h3>Record deleted</h3>";
+								echo "<p>Record deleted</p>";
 								}
 								else
 								{
-								echo "<h3>Error deleting record: </h3>";
+								echo "<p>Error deleting record: </p>";
 								}
 							?>
 					</div>
