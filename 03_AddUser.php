@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<!-- styles -->
@@ -34,7 +34,7 @@
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-				<img src="images/logo.jpg" width="40" height="40">
+				<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 				
@@ -74,9 +74,9 @@
 			<div class="w3-container">
 				<div class="content"><!-- Holds the add users content -->
 					<form method = "post" id= "04_add_user.php">
-						<h6><label for = 'login'>Username:</label>
+						<h6><label>Username:</label>
 							<input type = "text" name = "username" placeholder="Enter user name"/></h6>
-						<h6><label for = 'login'>Password:</label>
+						<h6><label>Password:</label>
 							<input type = "password" name = "password" placeholder="Enter user password"/></h6><br>
 						<h6><input class="w3-padding-small w3-button w3-green" type = "submit" value = "Insert" /></h6><br>
 					</form>
@@ -108,7 +108,7 @@
 
 		<!-- Footer -->
 		<footer class="w3-bottom w3-center w3-black w3-padding-64">
-			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
+			<p1>Created by <a href= "indexV1.php" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
 		</footer>
 
 

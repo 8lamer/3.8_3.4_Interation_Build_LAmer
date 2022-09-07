@@ -1,4 +1,3 @@
-								
 <!-- login session: php code -->
 <?php
 ob_start();
@@ -69,7 +68,7 @@ ob_end_flush();
 				color: white;
 
 			}
-			
+
 			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
 			@media screen and (min-width: 701px) {
 				h1 {
@@ -123,6 +122,8 @@ ob_end_flush();
 				background-size: cover;
 
 			}
+			
+
 		</style>
 
 
@@ -176,48 +177,73 @@ ob_end_flush();
 										<h1>SOUNDWAVE</h1>
 									</div>
 									<div class="content" style="margin-top: -25px;margin-left: 140px;">
-										<h2>FEEL THE MUSIC</h2>
+										<h2>CREATE ACCOUNT</h2>
 									</div>
 
 
-									<!-- login form -->
-									<form method = "post" id= "01_loginV2.php">
+									<!-- register form -->
+									<form method = "post" id= "06_register.php">
 										<div class="w3-row w3-section">
 											<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"> </i></div>
 											<div class="w3-rest">
-												<input  class="w3-input w3-border" type = "text" name = "username" placeholder="Username" style="width:100%"/>
+												<input class="w3-input w3-border" type = "text" name = "username" placeholder="Create Username" style="width:100%" required/>
 											</div>
 										</div>
 
 										<div class="w3-row w3-section">
 											<div class="w3-col" style="width:50px"><span class="w3-xxlarge material-icons">lock</span></div>
 											<div class="w3-rest">
-												<input  class="w3-input w3-border" type = "password" name = "password" placeholder="Password" style="width:100%"/>
+												<input class="w3-input w3-border" type = "password" name = "password" placeholder="Create Password" style="width:100%" required/>
 											</div>
 										</div>
 										<div class="w3-center">
-											<button class="w3-button w3-section w3-green w3-ripple w3-hover-grey"> Log in </button>
-										</div>
-										
-										<p class = "white"><?php echo $error; ?></p>
 
-										
-										
+											<input class="w3-button w3-section w3-green w3-ripple w3-hover-grey" type = "submit" value = "Register"/><br>
+										</div>
+
+										</form>
+
 										<!-- creates a line to seperate both login form / register -->
 										<hr>
-									
-											<p1 class="w3-center">Don't have an account?</p1>
-										
-										
-
-										<br>
-										<br>
 										<div class="w3-center">
-											<a href="06_register.php" class="w3-button w3-white w3-ripple w3-hover-grey">SIGN UP FOR SOUNDWAVE</a>
+											<p1>Thanks for registering!</p1>
+									
 										</div>
 
 										<br>
-									</form>
+										<div class="w3-center">
+											<a href="01_loginV2.php" class="w3-button w3-white w3-ripple w3-hover-grey">BACK TO LOGIN PAGE</a>
+										</div>
+
+
+
+										<div class="w3-left">
+											<?php
+											//connect.php (tells where to connect servername, username, password, dbaseName)
+											require "communityproject_mysqli.php";
+											print "<p4> </p4>";
+
+
+											$UserID = isset($_POST['username']) ?$_POST['username']: '';
+											$PW =  isset($_POST['password']) ?$_POST['password']: '';
+
+											//create a variable to store sql code for the 'Add Users' query
+											$insertquery = "INSERT INTO users( User_ID, Password ) VALUES( '$UserID','$PW' )";
+
+											if (mysqli_query($conn, $insertquery))
+											{
+												echo "<p4 class = white > </p4>";
+											}
+											else
+											{
+												echo "<p4 class = 'white'></p4>";
+											}
+											?>
+										</div>
+
+
+										<br>
+									
 								</div>
 							</div>
 						</div>

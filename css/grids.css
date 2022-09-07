@@ -4,11 +4,11 @@ heading1 {
 	border-bottom: 1px solid white;
 	padding-top: 5px;
 	padding-left: 6%;
-	width: 900w;
+	width: 100%;
 	display: grid;
 	grid-gap: 1%;
 	grid-template-columns: 9% 12% 12% 12% 12% 12% 12% 12% 12%;
-	grid-template-rows: 60w;
+	grid-template-rows: 45px;
 }
 
 
@@ -28,10 +28,6 @@ heading2{
 	
 /* colour rows for queries (each song)*/
 
-heading2:nth-child(even) {
-	background:;
-
-}
 heading2:nth-child(odd) {
 	background:rgba(255, 255, 255, .2);
 }
@@ -59,7 +55,7 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
 	text-align: center;
 	height: 10px;
 	font-size:11.5px;
-	width: 100w; 
+	width: 100%; 
 	text-align:left;
 }
 
@@ -90,7 +86,6 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
 	width: 400px;
 	height: 200px;
 	overflow-y: scroll;
-	float: center;
 }
 
 
@@ -118,7 +113,6 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
     width: 100%;
     height: 100%;
     background-color:#dd9a4f;
-    float: center;
 	padding:60px;
 
 }
@@ -129,7 +123,6 @@ Song_ID2, Title2, Artist2, Album2, Genre2, Size2, Duration2 {
     width: 100%;
     height: 80px;
     background-color:#dd9a4f;
-    float: center;
 	padding: 10px;
 	
 }
