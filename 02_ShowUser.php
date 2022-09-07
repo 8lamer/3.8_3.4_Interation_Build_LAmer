@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
@@ -36,7 +36,7 @@
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-				<img src="images/logo.jpg" width="40" height="40">
+				<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
@@ -130,7 +130,7 @@
 
 		<!-- footer (sits at bottom of page) -->
 		<footer class="w3-bottom w3-center w3-black w3-padding-64">
-			<p1>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
+			<p1>Created by <a href= "indexV1.php" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p1>
 		</footer>
 
 	</body>
