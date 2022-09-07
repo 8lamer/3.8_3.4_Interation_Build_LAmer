@@ -9,7 +9,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
@@ -84,7 +84,7 @@ else{
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-					<img src="images/logo.jpg" width="40" height="40">
+					<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
@@ -119,7 +119,7 @@ else{
 
 						<!-- picture for album -->
 						<div class="w3-container" style="height:100%;width:100%;">	
-							<img class="w3-round w3-left" src="images/borderjazz.jpg" width="200" height="180">
+							<img class="w3-round w3-left" src="images/borderjazz.jpg" alt="jazz" width="200" height="180">
 
 							<div class="w3-container w3-left">
 								<!-- title for genre + description -->
@@ -129,6 +129,9 @@ else{
 
 							</div>
 						</div>
+
+
+
 
 
 						<heading1>
@@ -143,6 +146,8 @@ else{
 							<Duration1><h4>Duration</h4></Duration1>
 
 						</heading1>
+
+
 
 
 
@@ -184,7 +189,7 @@ else{
 									<space></space>
 
 									<Song_ID2><p2 class = 'white'><?php echo $output['Song_ID']; ?></p2></Song_ID2>
-									<img src="images/<?php echo $output['Images']; ?>" style="width: 4vw; height: 4vw;">
+									<img src="images/<?php echo $output['Images']; ?>" alt="album" style="width: 4vw; height: 4vw;">
 									<Title2><p2 class = 'white'><?php echo $output['Title']; ?></p2></Title2>
 									<Artist2><p2 class = 'white'><?php echo $output['Artist']; ?></p2></Artist2>
 									<Album2><p2 class = 'white'><?php echo $output['Album']; ?></p2></Album2>
@@ -209,7 +214,7 @@ else{
 				</center>	
 				<!-- Footer -->
 				<footer class="w3-container w3-padding-16 w3-center w3-white">
-					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+					<p>Created by <a href= "indexV1.php" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 					<a href="#top" class="w3-button w3-grey">To the top </a>
 					<div class="w3-xlarge w3-section">
 						<i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -219,6 +224,7 @@ else{
 						<i class="fa fa-twitter w3-hover-opacity"></i>
 						<i class="fa fa-linkedin w3-hover-opacity"></i>
 					</div>
+					<p>All album covers are used from the source of Spotify</p>
 				</footer>
 
 			</div>
