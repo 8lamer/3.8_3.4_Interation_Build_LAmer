@@ -119,7 +119,7 @@ else{
 
 						<!-- picture for album -->
 						<div class="w3-container" style="height:100%;width:100%;">	
-							<img class="w3-round w3-left" src="images/placeholder.jpg" width="200" height="180">
+							<img class="w3-round w3-left" src="images/borderjazz.jpg" width="200" height="180">
 
 							<div class="w3-container w3-left">
 								<!-- title for genre + description -->
