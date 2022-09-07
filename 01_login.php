@@ -101,7 +101,7 @@ ob_end_flush();
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-					<img src="images/logo.jpg" width="40" height="40">
+					<img src="images/download_low.png" width="40" height="40">
 				</div>
 				<a class="w3-bar-item"><b>Soundwave</b> </a>
 			</div>
