@@ -1,3 +1,4 @@
+								
 <!-- login session: php code -->
 <?php
 ob_start();
@@ -30,7 +31,7 @@ ob_end_flush();
 
 
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
@@ -68,6 +69,38 @@ ob_end_flush();
 				color: white;
 
 			}
+			
+			/* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+			@media screen and (min-width: 701px) {
+				h1 {
+					font-family: 'Helvetica', 'Arial', sans-serif;
+					font-size: 40px;
+					color: white;
+				}
+
+				h2 {
+					font-family: 'Helvetica', 'Arial', sans-serif;
+					font-size: 25px;
+					color: white;
+
+				}
+			}
+
+			/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+			@media screen and (max-width: 700px) {
+				h1 {
+					font-family: 'Helvetica', 'Arial', sans-serif;
+					font-size: 30px;
+					color: white;
+				}
+
+				h2 {
+					font-family: 'Helvetica', 'Arial', sans-serif;
+					font-size: 15px;
+					color: white;
+
+				}
+			}
 
 
 			body, html {
@@ -101,7 +134,7 @@ ob_end_flush();
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-					<img src="images/logo.jpg" width="40" height="40">
+					<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a class="w3-bar-item"><b>Soundwave</b> </a>
 			</div>
@@ -133,105 +166,59 @@ ob_end_flush();
 
 							<div class="w3-row">
 								<div class="w3-col m6 w3-center w3-padding-large">
-									<img src="images/download_low.png" class="w3-round w3-image" alt="logo brand" width="350" height="233">
+									<img src="images/download_low.png" class="w3-mobile w3-round w3-image" alt="logo brand" width="310" height="213" style="margin-top: 15px;margin-right: -50px;">
 								</div>
 
 
 								<!-- Brand title + second title -->
 								<div class="w3-col m6 w3-padding-large">
-									<div class="content"style="margin-top: -25px;margin-right: 120px;">
+									<div class="content" style="margin-top: -25px;margin-right: 120px;">
 										<h1>SOUNDWAVE</h1>
 									</div>
-									<div class="content"style="margin-top: -25px;margin-left: 140px;">
+									<div class="content" style="margin-top: -25px;margin-left: 140px;">
 										<h2>FEEL THE MUSIC</h2>
 									</div>
 
 
 									<!-- login form -->
-									<form method = "post" id= "01_loginV2">
-
+									<form method = "post" id= "01_loginV2.php">
 										<div class="w3-row w3-section">
 											<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-user"> </i></div>
 											<div class="w3-rest">
-												<input for='login' class="w3-input w3-border" type = "username" name = "username" placeholder="Username" style="width:100%" required/>
+												<input  class="w3-input w3-border" type = "text" name = "username" placeholder="Username" style="width:100%"/>
 											</div>
 										</div>
 
 										<div class="w3-row w3-section">
 											<div class="w3-col" style="width:50px"><span class="w3-xxlarge material-icons">lock</span></div>
 											<div class="w3-rest">
-												<input for='login' class="w3-input w3-border" type = "password" name = "password" placeholder="Password" style="width:100%" required/>
+												<input  class="w3-input w3-border" type = "password" name = "password" placeholder="Password" style="width:100%"/>
 											</div>
 										</div>
 										<div class="w3-center">
 											<button class="w3-button w3-section w3-green w3-ripple w3-hover-grey"> Log in </button>
 										</div>
+										
+										<p class = "white"><?php echo $error; ?></p>
 
+										
+										
 										<!-- creates a line to seperate both login form / register -->
 										<hr>
-										<div class="w3-center">
-											<p1>Don't have an account?</p1>
-										</div>
+									
+											<p1 class="w3-center">Don't have an account?</p1>
+										
+										
 
 										<br>
+										<br>
 										<div class="w3-center">
-											<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-white w3-ripple w3-hover-grey">SIGN UP FOR SOUNDWAVE</button> 
+											<a href="06_register.php" class="w3-button w3-white w3-ripple w3-hover-grey">SIGN UP FOR SOUNDWAVE</a>
 										</div>
 
-										<h3 class = "white"><?php echo $error; ?></h3>
 										<br>
 									</form>
 								</div>
-							</div>
-						</div>
-
-						<!-- register form - modal pop up -->
-						<div id="id01" class="w3-modal">
-							<div class="w3-modal-content w3-card-4 w3-animate-zoom w3-white" style="max-width:600px">
-
-								<div class="w3-center"><br>
-									<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-xlarge w3-transparent w3-display-topright" title="Close Modal">×</span>
-								</div>
-
-								<form class="w3-container w3-white" action="/action_page.php">
-									<div class="w3-section">
-										<label for = 'login'>Username:</label>
-										<input type = "text" name = "username" placeholder="Enter user name" style="width:100%" required/><br />
-										<label for = 'login'>Password:</label>
-										<input type = "password" name = "password" placeholder="Enter user password" style="width:100%" required/><br />
-										<a href="01_loginV2.php" class="w3-button w3-block w3-green w3-section w3-padding" type="submit">Register </a>
-									</div>
-
-
-									<div class="w3-left">
-										<?php
-										//connect.php (tells where to connect servername, username, password, dbaseName)
-										require "communityproject_mysqli.php";
-										print "<p>Connected to server   <br>  </p>";
-
-
-										$UserID = isset($_POST['username']) ?$_POST['username']: '';
-										$PW =  isset($_POST['password']) ?$_POST['password']: '';
-
-										//create a variable to store sql code for the 'Add Users' query
-										$insertquery = "INSERT INTO users( User_ID, Password ) VALUES( '$UserID','$PW' )";
-
-										if (mysqli_query($conn, $insertquery))
-										{
-											echo "<p class = white > Record inserted:</p>";
-										}
-										else
-										{
-											echo "<p class = 'white'>Error inserting record:</p>";
-										}
-										?>
-									</div>
-
-									<div class="w3-container w3-border-top w3-padding-16 w3-white">
-										<button onclick="document.getElementById('id01').style.display='none'" type="button" class="w3-right w3-button w3-red">Cancel</button>
-									</div>
-
-								</form>
 							</div>
 						</div>
 					</div>
@@ -246,7 +233,7 @@ ob_end_flush();
 
 		<!-- footer -->
 		<footer class="w3-center w3-white w3-padding-32">
-			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+			<p>Created by <a href="" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 			<div class="w3-xlarge w3-section">
 				<i class="fa fa-facebook-official w3-hover-opacity"></i>
 				<i class="fa fa-instagram w3-hover-opacity"></i>
