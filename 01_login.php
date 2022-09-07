@@ -233,7 +233,7 @@ ob_end_flush();
 
 		<!-- footer -->
 		<footer class="w3-center w3-white w3-padding-32">
-			<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+			<p>Created by <a href="" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 			<div class="w3-xlarge w3-section">
 				<i class="fa fa-facebook-official w3-hover-opacity"></i>
 				<i class="fa fa-instagram w3-hover-opacity"></i>
