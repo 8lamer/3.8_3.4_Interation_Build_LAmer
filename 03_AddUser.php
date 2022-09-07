@@ -11,28 +11,39 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="stylesheet" href="https://use.typekit.net/tjv0dzy.css">
 
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
 		<meta name = "Description" content = "Graeme's Music Database"/>
 		<meta name = "viewport" content = "width=device-width,initial-scale=1"/>
+		
+		<!-- internal style sheet -->
+		<style>
+			h2 {
+				font-family: alegreya, serif;
+				font-size: 30px;
+				color: white;
 
-
+			}
+		</style>
+		
 	</head>
 	<body>
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
-			<div class="w3-bar w3-grey w3-padding w3-card">
+			<div class="w3-bar w3-white w3-padding w3-card">
 				<img src="images/placeholder.jpg" width="40" height="40">
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
 				<!-- Float links to the right -->
-				<div class="w3-right" >
+				<div class="w3-right">
 					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
 					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
 					<a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
-					<a href="settings.php" class="w3-bar-item w3-button w3-xxlarge material-icons">settings</a>	
+				
+					<a href="signout.php" class="w3-bar-item w3-button w3-xxlarge material-icons">logout</a>
 				</div>
 			</div>
 		</div>
@@ -52,9 +63,9 @@
 
 		</div>
 
-
+		<!-- Title for query: Add Users -->
 		<div style="margin-left:8%">
-			<div class="w3-container w3-dark-grey">
+			<div class="container3">
 				<h2>Add User</h2>
 			</div>
 
