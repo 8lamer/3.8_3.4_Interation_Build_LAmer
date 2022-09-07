@@ -118,17 +118,17 @@ else{
 						<!-- Container Queries -->
 
 						<div class="w3-third">
-			<a href="playlist_genre.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
+			<a href="playlist_genre.php"> <img src="images/query2no.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 							<h3>GENRE / ARTIST A - Z</h3>
 						</div>
 
 						<div class="w3-third">
-			<a href="playlistV1.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
+			<a href="playlistV1.php"> <img src="images/songIDno.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
 							<h3>SONG A - Z</h3>
 						</div>
 
 						<div class="w3-third">
-		<a href="playlist_SongArtist.php"> <img src="images/placeholder.jpg" class="w3-border w3-border-white w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
+		<a href="playlist_SongArtist.php"> <img src="images/query1.jpg" class="w3-border w3-border-white w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 							<h3>SONG / ARTIST Z - A</h3>
 						</div>
 						
