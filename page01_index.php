@@ -134,32 +134,32 @@
 								<div class="w3-row-padding w3-padding-16 w3-center">
 
 									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/placeholder.jpg" alt="Sandwich"   width="210" height="110" style="width:100%;max-width:230px">
+										<img class="w3-round-large" src="images/2-30.jpg" alt="Sandwich"   width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>
 
 									<div class="w3-third">
-										<img class="w3-round-large"src="images/placeholder.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
+										<img class="w3-round-large"src="images/Zombie.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>
 
 									<div class="w3-third">
-										<img class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<img class="w3-round-large" src="images/Stay.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>	
 
 									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/placeholder.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
+										<img class="w3-round-large" src="images/Aqualung.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>
 
 									<div class="mySlides w3-third">
-										<img  class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<img  class="w3-round-large" src="images/Hallelujah.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>
 
 									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/placeholder.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
+										<img class="w3-round-large" src="images/Fire.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
 										<h4>Album name</h4>
 									</div>
 
@@ -201,22 +201,22 @@
 							<div class="container w3-row-padding w3-center">
 								
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.rock .php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
+									<a href="Playlist_Genre.rock .php"> <img src="images/outlinerock.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
 								</div>
 
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.pop.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="POP"> </a>
+									<a href="Playlist_Genre.pop.php"> <img src="images/outlinepop.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="POP"> </a>
 								</div>
 
 
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.country.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+									<a href="Playlist_Genre.country.php"> <img src="images/outlinecountry.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
 								</div>
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.jazz.php"> <img src="images/placeholder.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+									<a href="Playlist_Genre.jazz.php"> <img src="images/outlinejazz.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
 								</div>
 
 
