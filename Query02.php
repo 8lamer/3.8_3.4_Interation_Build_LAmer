@@ -9,7 +9,7 @@ else{
 ?>
 
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
@@ -81,7 +81,7 @@ else{
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-					<img src="images/logo.jpg" width="40" height="40">
+					<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
@@ -119,17 +119,17 @@ else{
 						<!-- Container Queries -->
 
 						<div class="w3-third">
-			<a href="playlist_genre.php"> <img src="images/query2.jpg" class="w3-border w3-border-white w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
+			<a href="playlist_genre.php"> <img src="images/query2.jpg" class="w3-button w3-round w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 							<h3>GENRE / ARTIST A - Z</h3>
 						</div>
 
 						<div class="w3-third">
-			<a href="playlistV1.php"> <img src="images/songIDno.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
+			<a href="playlistV1.php"> <img src="images/songIDno.jpg" class="w3-button w3-round w3-hover-opacity-off"  alt="Song A - Z" height="170" style="width:310px"> </a>
 							<h3>SONG A - Z</h3>
 						</div>
 
 						<div class="w3-third">
-		<a href="playlist_SongArtist.php"> <img src="images/query1no.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
+		<a href="playlist_SongArtist.php"> <img src="images/query1no.jpg" class="w3-button w3-round w3-hover-opacity-off"  alt="sun" height="170" style="width:310px"> </a>
 							<h3>SONG / ARTIST Z - A</h3>
 						</div>
 						
@@ -155,18 +155,18 @@ else{
 
 								//Creates a variable to store the sql query
 								$query = ("SELECT s.Song_ID, s.Images, s.Title, 
-								GROUP_CONCAT(DISTINCT ar.Artist SEPARATOR ', ') AS 'Artist',
-								GROUP_CONCAT(DISTINCT al.Album SEPARATOR ', ') AS 'Album',
-								GROUP_CONCAT(DISTINCT g.Genre SEPARATOR ', ') AS 'Genre',
-								s.Size, s.Seconds
-								FROM songdetails AS s 
-								INNER JOIN Album al ON s.Album_PK = al.Album_PK 
-								JOIN songtoartist j ON s.Song_ID = j.Song_ID 
-								JOIN Artist ar ON ar.Artist_PK = j.Artist_PK 
-								JOIN songtogenre as gs ON s.Song_ID = gs.Song_ID
-								JOIN Genre as g ON g.Genre_PK = gs.Genre_PK
-								GROUP BY s.Song_ID 
-								ORDER BY s.Title DESC, Artist DESC");
+									GROUP_CONCAT(DISTINCT ar.Artist SEPARATOR ', ') AS 'Artist',
+									GROUP_CONCAT(DISTINCT al.Album SEPARATOR ', ') AS 'Album',
+									GROUP_CONCAT(DISTINCT g.Genre SEPARATOR ', ') AS 'Genre',
+									s.Size, s.Seconds
+									FROM songdetails AS s 
+									INNER JOIN Album al ON s.Album_PK = al.Album_PK 
+									JOIN songtoartist j ON s.Song_ID = j.Song_ID 
+									JOIN Artist ar ON ar.Artist_PK = j.Artist_PK 
+									JOIN songtogenre as gs ON s.Song_ID = gs.Song_ID
+									JOIN Genre as g ON g.Genre_PK = gs.Genre_PK
+									GROUP BY s.Song_ID 
+									ORDER BY Genre ASC, Artist ASC");
 
 
 								//Runs and stores the query using the variable $con (see nav.php) and $query
@@ -182,7 +182,7 @@ else{
 									<space></space>
 
 									<Song_ID2><p2 class = 'white'><?php echo $output['Song_ID']; ?></p2></Song_ID2>
-									<img src="images/<?php echo $output['Images']; ?>" style="width: 4vw; height: 4vw;">
+									<img src="images/<?php echo $output['Images']; ?>" alt="album" style="width: 4vw; height: 4vw;">
 									<Title2><p2 class = 'white'><?php echo $output['Title']; ?></p2></Title2>
 									<Artist2><p2 class = 'white'><?php echo $output['Artist']; ?></p2></Artist2>
 									<Album2><p2 class = 'white'><?php echo $output['Album']; ?></p2></Album2>
@@ -198,14 +198,8 @@ else{
 								?>
 
 								
-					
-
+				
 							</content>
-
-
-
-
-
 						</div>
 						
 								
@@ -231,7 +225,7 @@ else{
 						</div>
 						
 						<div class="w3-left">
-							<p2>Songs sorted by Genre and Artist</p2>
+							<p2>Songs sorted by Genre and Artist - Query Two</p2>
 						</div>
 					
 
@@ -243,7 +237,7 @@ else{
 				</center>
 				<!-- Footer -->
 				<footer class="w3-container w3-padding-16 w3-center w3-white">
-					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+					<p>Created by <a href="indexV1.php" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 					<a href="#top" class="w3-button w3-grey">To the top </a>
 					<div class="w3-xlarge w3-section">
 						<i class="fa fa-facebook-official w3-hover-opacity"></i>
@@ -253,7 +247,7 @@ else{
 						<i class="fa fa-twitter w3-hover-opacity"></i>
 						<i class="fa fa-linkedin w3-hover-opacity"></i>
 					</div>
-
+					<p>All album covers are used from the source of Spotify</p>
 				</footer>
 
 			</div>
