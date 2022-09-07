@@ -1,45 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
-
-/*h1, h2, h3{
-	font-weight: 900;
-	margin: -5px 0px 0px 5px; Alegreya
-}
-
-*/
-
-
-h2 {
-	color:black;
-	font-size: 15px;
-
-}
-
-
-
-h3 {
-	font-size: 35px;
-	color:black;
-}
-
-
 h4 {
-	font-size: 1.1em;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	font-size: 1.5vw;
 	color: white;
-	
-	
-}
 
 
-h6{
-	font-size: 22px;
-  	color: black;
-	margin: 0px
-}
-
-
-
-h5{
-	margin: 0px
 }
 
 
@@ -60,9 +24,21 @@ p1{
 }
 
 
-p2{
-	color: white;
-	font-family: arial;
-	font-size: 1.25em;
-}
 
+p2 {
+		color: white;
+		font-family: arial;
+		font-size: 1.1vw;
+
+}
+	
+
+
+
+p3 {
+		color: white;
+		font-family: arial;
+		font-size: 14px;
+
+}
+	

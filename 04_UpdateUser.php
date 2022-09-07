@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<link rel="stylesheet" href="https://use.typekit.net/tjv0dzy.css">
 
 		<meta name = "Keywords" content = "Graeme, Music Database, Soundwave, Music, Tunes"/>
 		<meta name = "Author" content = "Liv Amer"/>
@@ -21,20 +20,22 @@
 		<!-- internal style sheet -->
 		<style>
 			h2 {
-				font-family: alegreya, serif;
+				font-family: 'Helvetica', 'Arial', sans-serif;
 				font-size: 30px;
 				color: white;
 
 			}
 		</style>
-		
+
 	</head>
 	<body>
 
 		<!-- Navbar (sit on top) -->
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
-				<img src="images/placeholder.jpg" width="40" height="40">
+				<div class="w3-left">
+				<img src="images/placeholder.jpg" width="45" height="40">
+				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 
 				<!-- Float links to the right -->
@@ -42,6 +43,7 @@
 					<a href="indexV1.php" class="w3-bar-item w3-button w3-xxlarge fa fa-home"></a>
 					<a href="playlistV1.php" class="w3-bar-item w3-button w3-xxlarge material-icons">playlist_add</a>	
 					<a href="contact.php" class="w3-bar-item w3-button w3-xxlarge material-icons" >contact_support</a>
+
 					<a href="signout.php" class="w3-bar-item w3-button w3-xxlarge material-icons">logout</a>
 				</div>
 			</div>
@@ -65,7 +67,7 @@
 
 		<!-- Title for query: Update Users -->
 		<div style="margin-left:8%">
-			<div class="container3">
+			<div class="container5">
 				<h2>Update User</h2>
 			</div>
 
@@ -77,7 +79,7 @@
 							<input type = "text" name = "ExistingUserName" placeholder="Enter existing user name"/></h6>
 						<h6><label for = 'login'>New User Name:</label>
 							<input type = "text" name = "NewUserName" placeholder="Enter new user name"/></h6>
-						<h6><input type = "submit" value = "Update" /></h6><br>
+						<h6><input class="w3-padding-small w3-button w3-green" type = "submit" value = "Update" /></h6><br>
 					</form>
 
 					<?php
