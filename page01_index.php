@@ -9,7 +9,7 @@
 ?>
 
 <!DOCTYPE html>
-<html lang = "eng">
+<html lang = "en">
 	<head>
 		<title>Sound Wave</title>
 		<meta charset = "utf-8">
@@ -51,7 +51,7 @@
 			
 			h4 {
 				font-family: 'Helvetica', 'Arial', sans-serif;
-				font-size: 20px;
+				font-size: 17px;
 				color: white;
 
 
@@ -89,7 +89,7 @@
 		<div class="w3-top">
 			<div class="w3-bar w3-white w3-padding w3-card">
 				<div class="w3-left">
-					<img src="images/logo.jpg" width="40" height="40">
+					<img src="images/logo.jpg" alt="logo" width="40" height="40">
 				</div>
 				<a href="indexV1.php" class="w3-bar-item w3-button"><b>Soundwave</b> </a>
 				
@@ -134,35 +134,35 @@
 								<div class="w3-row-padding w3-padding-16 w3-center">
 
 									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/2-30.jpg" alt="Sandwich"   width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+										<img class="w3-round-large" src="images/2-30.jpg" alt="2-30"   width="210" height="110" style="width:100%;max-width:230px">
+										<h4>2-30</h4>
 									</div>
 
 									<div class="w3-third">
-										<img class="w3-round-large"src="images/Zombie.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+										<img class="w3-round-large" src="images/Zombie.jpg" alt="Zombie" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Zombie</h4>
 									</div>
 
-									<div class="w3-third">
-										<img class="w3-round-large" src="images/Stay.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+									<div class="mySlides w3-third">
+										<img class="w3-round-large" src="images/Stay.jpg" alt="Stay" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Stay</h4>
 									</div>	
 
-									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/Aqualung.jpg" alt="Steak" width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+									<div class="w3-third">
+										<img class="w3-round-large" src="images/Aqualung.jpg" alt="Aqualung" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Aqualung</h4>
 									</div>
 
 									<div class="mySlides w3-third">
-										<img  class="w3-round-large" src="images/Hallelujah.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+										<img  class="w3-round-large" src="images/Hallelujah.jpg" alt="Hallelujah" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Hallelujah</h4>
 									</div>
 
 									<div class="mySlides w3-third">
-										<img class="w3-round-large" src="images/Fire.jpg" alt="Cherries" width="210" height="110" style="width:100%;max-width:230px">
-										<h4>Album name</h4>
+										<img class="w3-round-large" src="images/Fire.jpg" alt="Fire" width="210" height="110" style="width:100%;max-width:230px">
+										<h4>Fire</h4>
 									</div>
-
+									
 								</div>			
 							</div>
 
@@ -183,6 +183,12 @@
 									x[slideIndex-1].style.display = "block";
 									setTimeout(carousel, 2000); // Change image every 2 seconds
 								}
+								
+								
+								
+						
+								
+								
 							</script>
 
 							<br>
@@ -201,22 +207,22 @@
 							<div class="container w3-row-padding w3-center">
 								
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.rock .php"> <img src="images/outlinerock.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="ROCK"> </a>
+									<a href="Playlist_Genre.rock.php"> <img src="images/outlinerock.jpg" alt="rock" class="w3-button w3-round w3-hover-opacity-off" style="width:100%"></a>
 								</div>
 
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.pop.php"> <img src="images/outlinepop.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="POP"> </a>
+									<a href="Playlist_Genre.pop.php"> <img src="images/outlinepop.jpg" alt="pop" class="w3-button w3-round w3-hover-opacity-off" style="width:100%"></a>
 								</div>
 
 
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.country.php"> <img src="images/outlinecountry.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+									<a href="Playlist_Genre.country.php"> <img src="images/outlinecountry.jpg" alt="country" class="w3-button w3-round w3-hover-opacity-off" style="width:100%"> </a>
 								</div>
 
 								<div class="w3-col m3">
-									<a href="Playlist_Genre.jazz.php"> <img src="images/outlinejazz.jpg" class="w3-button w3-round w3-opacity w3-hover-opacity-off" style="width:100%"  alt="COUNTRY"> </a>
+									<a href="Playlist_Genre.jazz.php"> <img src="images/outlinejazz.jpg" alt="jazz" class="w3-button w3-round w3-hover-opacity-off" style="width:100%"> </a>
 								</div>
 
 
@@ -230,7 +236,7 @@
 				</center>
 				<!-- Footer -->
 				<footer class="w3-container w3-padding-16 w3-center w3-white">
-					<p>Created by <a target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
+					<p>Created by <a href="indexV1.php" target="_blank" class="w3-hover-text-orange">Soundwave</a> &copy; Copyright Liv Amer 2022</p>
 					<a href="#top" class="w3-button w3-grey">To the top </a>
 					<div class="w3-xlarge w3-section">
 						<i class="fa fa-facebook-official w3-hover-opacity"></i>
